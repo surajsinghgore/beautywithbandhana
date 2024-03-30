@@ -10,8 +10,16 @@ export default function Home() {
 <h2>About Us</h2>
 
 <div className={styles.about}>
-<div className={styles.left}></div>
-<div className={styles.right}></div>
+<div className={styles.left}>
+    <div className={styles.image}>
+<Image src="/about.jpeg" alt="about" layout="fill" priority />
+    </div>
+</div>
+<div className={styles.right}>
+    <p>If you are looking for the best beauty services ranging from threading, facial, haircuts and more, you can walk in here. Graduating from the best beauty schools, and working with top beauty professionals we have mastered the skills of delivering the best beauty and spa services in town.
+Over the years we have served hundreds of happy clients who trust us for their look for important occasions like weddings, corporate parties, concerts, events and more. So, whether it is a quick touch-up or detailed beauty therapies, we are here to help you.</p>
+<Link href={"https://www.fresha.com/a/beauty-with-bandhana-morley-289-benara-road-kixb51p0/booking?menu=true"}><button>BOOK ONLINE SERVICE</button></Link>
+</div>
 </div>
 
    {/* footer */}
