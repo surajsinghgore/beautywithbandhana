@@ -93,15 +93,18 @@ background-color: rgb(255, 255, 255);
         height: auto;
         margin-left: 0%;
         z-index: 99;
+        overflow: auto;
     }
     
     /* topHomeSection */
     .main .topHomeSection{
         position: relative;
         width: 100vw;
-        height: 70vh;
+        margin-bottom: 5%;
+        height: 60vh;
         background-color: red;
         background: url('/homePic.jpg') no-repeat;
+        overflow: auto;
         background-size: cover;
     }
     
