@@ -90,3 +90,101 @@ background-color: rgb(255, 255, 255);
 .main footer span{
     color: rgb(255, 0, 111);
 } 
+
+
+
+@media only screen and (min-width: 0px)and (max-width:1000px)   {
+
+    .main{
+        clear: both;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+     position: relative;
+    
+    }
+    
+    
+    .main h2{
+    font-size: 6vw;
+    padding-top: 6%;
+    padding-left: 4%;
+    }
+    
+    
+    .main .about{
+        padding-top: 6%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+    
+    
+    .main .about .left{
+        border-radius: 20px;
+        width: 100%;
+    }
+    
+    .main .about .left .image{
+        position: relative;
+        width: 100%;
+        height: 50vw;
+    }
+    .main .about .right{
+    width: 100%;
+    }
+    .main .about .right p{
+        padding-top: 5%;
+        width: 90%; font-family: "Mulish", sans-serif;
+        font-size: 3.1vw;
+        margin-left: 0%;
+    }
+    .main .about .right button{
+        width: 36vw;
+        border: none;
+        outline: none;
+        padding: 2.4% 4%;
+        color: white;
+        cursor: pointer;
+        margin-top: 4%;
+        background-color: rgb(255, 2, 149);
+        font-size: 2.3vw;
+        margin-left:0%;
+        transition: all 0.2s;
+    }
+    .main .about .right button:hover{
+    border-radius: 10px;
+        box-shadow: 0px 0px 10px 3px rgb(204, 204, 204);
+    } 
+    
+    /* footer */
+    .main footer{
+        border-top:1px solid rgb(237, 237, 237);
+        width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 3vw;  font-family: "Playfair Display", serif;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(250, 250, 250); */
+    }
+    
+    
+    
+    
+    
+    
+    
+    .main footer span{
+        color: rgb(255, 0, 111);
+    } 
+    
+}
