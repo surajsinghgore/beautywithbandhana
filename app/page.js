@@ -14,6 +14,13 @@ export default function Home() {
   <Link href="https://www.fresha.com/a/beauty-with-bandhana-morley-289-benara-road-kixb51p0/booking?employeeId=2807218"><button>BOOK ONLINE SERVICES</button></Link>
 </div>
    </div>
+
+
+
+   {/* footer */}
+   <footer>
+   Copyright ©2024 All rights reserved | This template is made with 💖 by <span>BEAUTY WITH BANDHANA</span>
+   </footer>
     </main>
   );
 }

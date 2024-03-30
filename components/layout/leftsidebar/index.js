@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { FaFacebookF ,FaInstagram} from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-export default function index() {
+import { usePathname } from 'next/navigation';
+
+export default function Index() {
+  const currentPage = usePathname();
   return (
     <div className="leftsidebar">
       {/* top icon section */}
@@ -33,30 +37,30 @@ export default function index() {
 </div>
 {/* home */}
   <li>
-  <div className="line active"><Link href="/"> <hr /></Link></div>
+  <div className={(currentPage=="/")?"line active":"line"}><Link href="/"> <hr /></Link></div>
   <div className="text"><Link href="/">HOME</Link></div>
   </li>
   {/* services */}
   <li>
-  <div className="line" style={{width:"53%"}}><Link href="/"> <hr /></Link></div>
-  <div className="text"><Link href="/">OUR SERVICES</Link></div>
+  <div className={(currentPage=="/services")?"line active":"line"} style={{width:"53%"}}><Link href="/services"> <hr /></Link></div>
+  <div className="text"><Link href="/services">OUR SERVICES</Link></div>
   </li>
 
    {/* ABOUT US */}
    <li>
-  <div className="line" style={{width:"62%"}}><Link href="/"> <hr /></Link></div>
+  <div className={(currentPage=="/about")?"line active":"line"} style={{width:"62%"}}><Link href="/"> <hr /></Link></div>
   <div className="text"><Link href="/">ABOUT US</Link></div>
   </li>
 
   {/* ABOUT US */}
   <li>
-  <div className="line" style={{width:"63%"}}><Link href="/"> <hr /></Link></div>
+  <div className={(currentPage=="/contact")?"line active":"line"} style={{width:"63%"}}><Link href="/"> <hr /></Link></div>
   <div className="text"><Link href="/">CONTACT</Link></div>
   </li>
 
   {/* LOCATION */}
   <li>
-  <div className="line"><Link href="/"> <hr /></Link></div>
+  <div className={(currentPage=="/time")?"line active":"line"}><Link href="/"> <hr /></Link></div>
   <div className="text"><Link href="/">TIME</Link></div>
   </li>
 </div>
