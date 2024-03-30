@@ -74,9 +74,9 @@ export default function Index() {
 <div className="bottomIcons">
 
   <div className="icons">
-  <Link href="https://www.facebook.com/beautywithbandana/"><li title="Facebook"><i><FaFacebookF /></i></li></Link>
+  <Link href="https://www.facebook.com/people/Bandhana-Bhatti/pfbid02XG1XFhPvoQGfmrxyUvjqjxEiGocW2Rj44u6wzPBFy7toYzhGkrouCfQxKPHTGWptl/?mibextid=LQQJ4d"><li title="Facebook"><i><FaFacebookF /></i></li></Link>
 
-<Link href="https://www.instagram.com/beautywithbandhana/"><li title="Instagram"><i><FaInstagram/></i></li></Link>
+<Link href="https://www.instagram.com/beautywithbandhana/?igsh=MTZ3ZXUyMG9wbmxneg%3D%3D&utm_source=qr"><li title="Instagram"><i><FaInstagram/></i></li></Link>
 
 <Link href="mailto: Bandhana@beautywithb.com.au"><li title="Send Message"><i><CiMail/></i></li></Link>
 
