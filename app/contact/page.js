@@ -43,6 +43,7 @@ export default function Home() {
     <div className={styles.right}>
         <h3>Get In Touch</h3>
         <p> 0450 698 030 <br/>
+        0450 556 305 <br/>
         bandhana@beautywithb.<br/> com.au
         </p>
     </div>

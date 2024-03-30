@@ -60,8 +60,8 @@ export default function Index() {
 
   {/* LOCATION */}
   <li>
-  <div className={(currentPage=="/time")?"line active":"line"}><Link href="/"> <hr /></Link></div>
-  <div className="text"><Link href="/">TIME</Link></div>
+  <div className={(currentPage=="/time")?"line active":"line"}><Link href="/time"> <hr /></Link></div>
+  <div className="text"><Link href="/time">TIME</Link></div>
   </li>
 </div>
 </div>
