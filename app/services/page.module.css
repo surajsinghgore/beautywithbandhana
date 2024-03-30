@@ -27,11 +27,12 @@ font-family: "Roboto", sans-serif;
 display: flex;
 width: 90%;
 margin-top: 4%;
-margin-left: 5%;
+margin-left: 8%;
 flex-wrap: wrap;
 }
 /* card section */
 .main .services .card{
+    position: relative;
     border: 1px solid rgb(223, 223, 223);
     width: 30%;
     margin-right: 2%;
@@ -47,7 +48,6 @@ flex-wrap: wrap;
 }
 .main .services .card .details{
 width: 90%;
-position: relative;
 margin-top: 5%;
 margin-left: 5%;
 }
@@ -59,14 +59,18 @@ margin-bottom: 1%;
 }
 .main .services .card .details p{
 margin-top: 5%;
+padding-bottom: 30%;
 word-break: keep-all;
     color: rgb(105, 105, 105);font-family: "Roboto Mono", monospace;
 }
 
 .main .services .card .details button{
+position: absolute;
+bottom: -1%;
+left: 5%;
 border-radius: 10px;
 padding: 3% 0;
-background-color: red;
+background-color: rgb(255, 0, 111);
 width: 8vw;
 border: none;
 
