@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -87,12 +90,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
 }
 
 a {
@@ -100,8 +98,101 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+
+/* left side bar */
+.leftsidebar{
+  width: 30%;
+  height: 100vh;
+  background: #ec008c; 
+  background: -webkit-linear-gradient(to top, #fc6767, #ec008c); 
+  background: linear-gradient(to top, #fc6767, #ec008c); 
+  
+}
+
+.leftsidebar .innerMain .brandName{
+  padding-top: 10%;
+  position: relative;
+  z-index: 2
+}
+
+
+.leftsidebar .innerMain .brandName .logo{
+  position: relative;
+  width:11vw;
+  z-index: 99;
+  margin-left: 30%;
+  height: 10vw;
+}
+.leftsidebar .innerMain .brandName .brandNameText h2{
+text-align: center;
+font-size: 1.8vw;
+color: white;
+z-index: 99;
+
+font-family: "Reddit Mono", monospace;
+}
+.leftsidebar .innerMain .brandName .brandNameText p{
+text-align: center;
+font-size: 1.2vw;
+color: white;
+margin-top: 1%;
+font-family: "Quicksand", sans-serif;
+
+}
+
+
+/* mainLinks */
+.leftsidebar .innerMain .mainLinks{
+list-style: none;
+position: relative;
+
+margin-top: 8%;
+}
+
+
+/* left side banner image */
+.leftsidebar .innerMain .mainLinks .bgImageBanner{
+  position: absolute;
+  top: -170%;
+  left: 0;
+  width: 30vw;
+  opacity: 0.1;
+  height: 35vw;
+  filter: grayscale(100%);
+z-index: 1;
   }
+
+   
+.leftsidebar .innerMain .mainLinks li{
+  width: 90%;
+  height: 40px;
+  margin-left: 10%;
+  display: flex;
+  margin-bottom: 2%;
+
+}
+.leftsidebar .innerMain .mainLinks li .line{
+  width: 70%;z-index: 11;
+} 
+.leftsidebar .innerMain .mainLinks li .line hr{
+  margin-top: 4%;
+  width: 95%;
+  transition: all 0.5s;
+  z-index: 11;
+border:1px solid white;
+} 
+
+.leftsidebar .innerMain .mainLinks li .text{
+margin-top: 0;
+  width: 30%;
+  z-index: 11;
+  font-weight: 600;
+  color: white;
+
+font-size: 1.3vw;font-family: "Roboto Condensed", sans-serif; transition: all 0.5s;
+} 
+/* hover effect on links */
+.leftsidebar .innerMain .mainLinks li .line:hover hr{
+  width: 90%;
 }
