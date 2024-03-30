@@ -102,6 +102,8 @@ a {
 
 /* left side bar */
 .leftsidebar{
+  float: left;
+  position: relative;
   width: 30%;
   height: 100vh;
   background: #ec008c; 
@@ -119,7 +121,7 @@ a {
 
 .leftsidebar .innerMain .brandName .logo{
   position: relative;
-  width:11vw;
+  width:10vw;
   z-index: 99;
   margin-left: 30%;
   height: 10vw;
@@ -129,7 +131,7 @@ text-align: center;
 font-size: 1.8vw;
 color: white;
 z-index: 99;
-
+margin-top: 2%;
 font-family: "Reddit Mono", monospace;
 }
 .leftsidebar .innerMain .brandName .brandNameText p{
@@ -154,11 +156,11 @@ margin-top: 8%;
 /* left side banner image */
 .leftsidebar .innerMain .mainLinks .bgImageBanner{
   position: absolute;
-  top: -170%;
+  top: -70%;
   left: 0;
   width: 30vw;
   opacity: 0.1;
-  height: 35vw;
+  height: 33vw;
   filter: grayscale(100%);
 z-index: 1;
   }
@@ -180,8 +182,13 @@ z-index: 1;
   width: 95%;
   transition: all 0.5s;
   z-index: 11;
-border:1px solid white;
+border:1px solid rgb(202, 202, 202);
 } 
+.leftsidebar .innerMain .mainLinks li .active hr{
+  border:1px solid rgb(255, 255, 255);
+
+
+}
 
 .leftsidebar .innerMain .mainLinks li .text{
 margin-top: 0;
@@ -189,10 +196,47 @@ margin-top: 0;
   z-index: 11;
   font-weight: 600;
   color: white;
-
 font-size: 1.3vw;font-family: "Roboto Condensed", sans-serif; transition: all 0.5s;
 } 
-/* hover effect on links */
-.leftsidebar .innerMain .mainLinks li .line:hover hr{
-  width: 90%;
+
+/* bottomIcons */
+.leftsidebar .bottomIcons{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+display: flex;
+  height: 70px;
 }
+.leftsidebar .bottomIcons .icons{
+  width: 40%;
+  display: flex;
+  padding-left: 4%;
+  padding-top: 2%;
+  text-align: center;
+  list-style: none;
+}
+.leftsidebar .bottomIcons .icons i{
+  color: rgb(161, 0, 89);
+line-height: 3.5vw;
+  font-size: 1.6vw;
+}
+
+.leftsidebar .bottomIcons .icons a{
+  width:3vw;
+height: 3vw;
+border-radius: 60px;
+margin-right: 5%;
+transition: all 0.4s;
+background-color: rgb(255, 208, 247);
+}
+.leftsidebar .bottomIcons .icons a:hover{
+  transform: scale(1.1);
+}
+
+.leftsidebar .bottomIcons .rightLine{
+  padding-top: 7%;
+  width: 57%;
+}
+.leftsidebar .bottomIcons .rightLine hr{
+  border:1px solid rgb(214, 214, 214);}
