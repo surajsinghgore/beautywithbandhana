@@ -95,3 +95,89 @@ background-color: rgb(255, 255, 255);
 .main footer span{
     color: rgb(255, 0, 111);
 } 
+
+
+@media only screen and (min-width: 0px)and (max-width:1000px)   {
+    .main{
+        clear: both;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+     position: relative;
+    }
+
+    .main h2{
+        font-size: 6vw;
+        padding-top: 6%;
+        padding-left: 4%;
+    }
+    
+    
+
+/* map */
+.main .map iframe{
+    width: 90%;
+    margin-top: 5%;
+    height: 55vw;
+    margin-left: 5%;
+    border: none;
+}
+
+
+/* address */
+.main .address{
+    margin-bottom: 2%;
+list-style: none;
+width: 90%;
+margin-left: 5%;
+margin-top: 5%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.main .address li{
+    width: 100%;
+    display: flex;
+    margin-right: 3%;
+
+    margin-bottom: 4%;
+}
+.main .address li .left{
+    width: 30%;
+    font-size: 6vw;
+    padding-top: 2%;
+    text-align: center;
+    color: rgb(240, 4, 126);
+}
+.main .address li .right{
+
+    width: 70%;
+}
+.main .address li .right h3{
+color: rgb(52, 52, 52);
+    font-size: 3.8vw;
+}
+
+.main .address li .right p{
+    margin-top: 2%;
+  width: 100%;
+    font-size: 3vw;
+}
+    .main footer{
+        border-top:1px solid rgb(237, 237, 237);
+        width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 3vw;  font-family: "Playfair Display", serif;
+    background-color: rgb(255, 255, 255);
+    }
+      
+}
