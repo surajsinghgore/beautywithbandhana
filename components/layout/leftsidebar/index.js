@@ -24,7 +24,7 @@ useEffect(()=>{
     setEnable(true);
   
   }
-},[])
+},[currentPage])
   return (
     <div className="leftsidebar">
       {/* top icon section */}
