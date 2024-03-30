@@ -54,8 +54,8 @@ export default function Index() {
 
   {/* ABOUT US */}
   <li>
-  <div className={(currentPage=="/contact")?"line active":"line"} style={{width:"63%"}}><Link href="/"> <hr /></Link></div>
-  <div className="text"><Link href="/">CONTACT</Link></div>
+  <div className={(currentPage=="/contact")?"line active":"line"} style={{width:"63%"}}><Link href="/contact"> <hr /></Link></div>
+  <div className="text"><Link href="/contact">CONTACT</Link></div>
   </li>
 
   {/* LOCATION */}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.main{
+    position: relative;
+    width: 70vw;
+    height: 47.78vw;
+    margin-left: 30%;
+ position: fixed;
+ overflow-y: auto;
+
+}
+
+
+.main h2{
+font-size: 3vw;
+padding-top: 2%;
+padding-left: 4%;
+font-family: "Roboto", sans-serif;
+}
+
+
+/* map */
+.main .map iframe{
+    width: 90%;
+    margin-top: 5%;
+    height: 25vw;
+    margin-left: 5%;
+    border: none;
+}
+
+
+/* address */
+.main .address{
+list-style: none;
+width: 90%;
+margin-left: 5%;
+margin-top: 5%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.main .address li{
+    width: 30%;
+    display: flex;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+.main .address li .left{
+    width: 25%;
+    font-size: 3vw;
+    padding-top: 2%;
+    color: rgb(240, 4, 126);
+}
+.main .address li .right{
+
+    width: 70%;
+}
+.main .address li .right h3{
+color: rgb(52, 52, 52);
+    font-size: 1.8vw;
+}
+
+.main .address li .right p{
+    margin-top: 2%;
+    font-family: "Raleway", sans-serif;
+    color: rgb(87, 87, 87);
+}
+
+/* footer */
+.main footer{
+    width: 100%;
+position: relative;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 5vw;
+user-select: none;
+text-align: center;
+padding-top: 2%;
+font-size: 1.4vw; font-family: "Playfair Display", serif;
+background-color: rgb(239, 239, 239);
+}
+
+
+
+
+
+
+
+.main footer span{
+    color: rgb(255, 0, 111);
+} 
