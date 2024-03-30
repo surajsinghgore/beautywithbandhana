@@ -4,13 +4,33 @@ import Link from "next/link";
 import { FaFacebookF ,FaInstagram} from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { usePathname } from 'next/navigation';
+import { IoMdMenu ,IoMdClose} from "react-icons/io";
+import { useEffect, useState } from "react";
 
 export default function Index() {
+  const [enable,setEnable]=useState(false);
+
   const currentPage = usePathname();
+
+  const changeStates=()=>{
+    if(window.screen.width<=1000){
+  setEnable(!enable);
+
+}
+  }
+
+useEffect(()=>{
+  if(window.screen.width<=1000){
+    setEnable(true);
+  
+  }
+},[])
   return (
     <div className="leftsidebar">
       {/* top icon section */}
-
+<div className="TopIcon">
+  <i onClick={()=>changeStates()}>{(enable)?<IoMdMenu/>:<IoMdClose/>}</i>
+</div>
 <div className="innerMain">
 {/* brand name section */}
 <div className="brandName">
@@ -30,7 +50,7 @@ export default function Index() {
 
 
 {/* main links */}
-<div className="mainLinks">
+<div className={(enable)?"mainLinks disabled":"mainLinks"} >
 {/* bg image */}
 <div className="bgImageBanner">
 <Image src={"/leftsidebanner.jpg"} alt="leftsidebanner image" className="leftsidebarImage" layout="fill" priority/>
@@ -64,27 +84,28 @@ export default function Index() {
   <div className="text"><Link href="/time">TIME</Link></div>
   </li>
 </div>
+
 </div>
 
 
 
 
 {/* social media links */}
+<div className={(enable)?"bottomIcons":"bottomIcons"} style={(enable)?{display:"none"}:{display:"flex"}}>
 
-<div className="bottomIcons">
-
-  <div className="icons">
-  <Link href="https://www.facebook.com/people/Bandhana-Bhatti/pfbid02XG1XFhPvoQGfmrxyUvjqjxEiGocW2Rj44u6wzPBFy7toYzhGkrouCfQxKPHTGWptl/?mibextid=LQQJ4d"><li title="Facebook"><i><FaFacebookF /></i></li></Link>
+<div className="icons">
+<Link href="https://www.facebook.com/people/Bandhana-Bhatti/pfbid02XG1XFhPvoQGfmrxyUvjqjxEiGocW2Rj44u6wzPBFy7toYzhGkrouCfQxKPHTGWptl/?mibextid=LQQJ4d"><li title="Facebook"><i><FaFacebookF /></i></li></Link>
 
 <Link href="https://www.instagram.com/beautywithbandhana/?igsh=MTZ3ZXUyMG9wbmxneg%3D%3D&utm_source=qr"><li title="Instagram"><i><FaInstagram/></i></li></Link>
 
 <Link href="mailto: Bandhana@beautywithb.com.au"><li title="Send Message"><i><CiMail/></i></li></Link>
 
-  </div>
-  <div className="rightLine">
-<hr />
-  </div>
 </div>
+<div className="rightLine">
+<hr />
+</div>
+</div>
+
 
     </div>
   )

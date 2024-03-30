@@ -5,7 +5,7 @@ export const metadata = {
   
   title: "Beauty With Bandhana",
   description:
-    "",
+    "Beauty With Bandhana",
   generator: "Next.js",
   applicationName: "Beauty With Bandhana",
   referrer: "origin-when-cross-origin",
