@@ -341,7 +341,8 @@ font-size: 3vw;
 .leftsidebar .bottomIcons{
 position: relative;
 bottom: 0;
-left: 0;
+    z-index: 999;
+    left: 0;
 width: 100%;
 margin-bottom: 4%;
 display: flex;
@@ -351,7 +352,8 @@ margin-left: 5%;
 .leftsidebar .bottomIcons .icons{
   width: 30%;
   display: flex;
-  padding-left: 4%;
+    z-index: 999;
+    padding-left: 4%;
   padding-top: 2%;
   text-align: center;
   list-style: none;
@@ -359,7 +361,8 @@ margin-left: 5%;
 .leftsidebar .bottomIcons .icons i{
   color: rgb(161, 0, 89);
 line-height: 7vw;
-  font-size: 4vw;
+    z-index: 999;
+    font-size: 4vw;
 }
 
 .leftsidebar .bottomIcons .icons a{

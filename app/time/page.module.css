@@ -130,8 +130,9 @@ background-color: rgb(255, 255, 255);
         font-size: 5vw;
         color: white;
         padding-left: 3%;
-        padding-top: 3%;
-        height: 40px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        height: auto;
     }
     .main .timing li{
         display: flex;

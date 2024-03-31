@@ -94,7 +94,7 @@ useEffect(()=>{
 <div className={(enable)?"bottomIcons":"bottomIcons"} style={(enable)?{display:"none"}:{display:"flex"}}>
 
 <div className="icons">
-<Link href="https://www.facebook.com/people/Bandhana-Bhatti/pfbid02XG1XFhPvoQGfmrxyUvjqjxEiGocW2Rj44u6wzPBFy7toYzhGkrouCfQxKPHTGWptl/?mibextid=LQQJ4d"><li title="Facebook"><i><FaFacebookF /></i></li></Link>
+<Link href="https://www.facebook.com/profile.php?id=61556550327944&mibextid=LQQJ4d"><li title="Facebook"><i><FaFacebookF /></i></li></Link>
 
 <Link href="https://www.instagram.com/beautywithbandhana/?igsh=MTZ3ZXUyMG9wbmxneg%3D%3D&utm_source=qr"><li title="Instagram"><i><FaInstagram/></i></li></Link>
 
